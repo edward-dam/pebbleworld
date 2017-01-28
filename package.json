@@ -1,0 +1,61 @@
+{
+    "author": "Edward Dam",
+    "dependencies": {
+        "pebble-clay": "^1.0.0",
+        "pebblejs": "^1.0.0"
+    },
+    "keywords": [],
+    "name": "world-v1.0",
+    "pebble": {
+        "capabilities": [
+            "configurable"
+        ],
+        "displayName": "World v1.0",
+        "enableMultiJS": true,
+        "messageKeys": [
+            "message_keys",
+            "hours_24",
+            "date_order",
+            "temp_degrees"
+        ],
+        "projectType": "native",
+        "resources": {
+            "media": [
+                {
+                    "file": "images/splash.png",
+                    "name": "SPLASH",
+                    "targetPlatforms": [
+                        "aplite",
+                        "basalt",
+                        "chalk",
+                        "diorite"
+                    ],
+                    "type": "bitmap"
+                },
+                {
+                    "file": "images/menu_icon.png",
+                    "menuIcon": true,
+                    "name": "MENU_ICON",
+                    "targetPlatforms": [
+                        "aplite",
+                        "basalt",
+                        "chalk",
+                        "diorite"
+                    ],
+                    "type": "bitmap"
+                }
+            ]
+        },
+        "sdkVersion": "3",
+        "targetPlatforms": [
+            "aplite",
+            "basalt",
+            "diorite"
+        ],
+        "uuid": "5cae3e60-0b35-45ca-8b16-08a8f6b9de40",
+        "watchapp": {
+            "watchface": true
+        }
+    },
+    "version": "1.0.0"
+}
