@@ -25,9 +25,9 @@ var time = "%H:%M";
 var date = "%A %b %d";
 var options = JSON.parse(localStorage.getItem('clay-settings'));
 if ( options !== null) {
-  console.log('Loaded hours_24 option: ' + options.hours_24);
-  console.log('Loaded date_order option: ' + options.date_order);
-  console.log('Loaded temp_degrees option: ' + options.temp_degrees);
+  //console.log('Loaded hours_24 option: ' + options.hours_24);
+  //console.log('Loaded date_order option: ' + options.date_order);
+  //console.log('Loaded temp_degrees option: ' + options.temp_degrees);
   if ( options.hours_24 === "12hours" ) {
     time = "%I:%M";
   }
@@ -36,14 +36,13 @@ if ( options !== null) {
   }
 }
 
-
 // definitions
 var window = new UI.Window();
 var windowSize = window.size();
 var size = new Vector2(windowSize.x, windowSize.y);
 var backgroundColor = 'black';
 var highlightBackgroundColor = 'white';
-var textColor = 'white';
+//var textColor = 'white';
 var highlightTextColor = 'black';
 var textAlign = 'center';
 var fontXLarge = 'leco-42-numbers';
@@ -80,7 +79,6 @@ collectgpslocation(function() {
     mainLocation.font(fontSmall);
     mainTime.font(fontXLarge);
     mainDate.font(fontXSmall);
-    //mainLocation.text(apidata.name);
     mainLocation.text(location + ' ' + temperature);
     mainImage.image('images/splash.png');
     mainTime.text(time);
