@@ -4,13 +4,13 @@
         "pebble-clay": "^1.0.0"
     },
     "keywords": [],
-    "name": "world-v2.0",
+    "name": "world-v2.1",
     "pebble": {
         "capabilities": [
             "location",
             "configurable"
         ],
-        "displayName": "World v2.0",
+        "displayName": "World v2.1",
         "enableMultiJS": true,
         "messageKeys": [
             "LOCATION",
@@ -52,6 +52,7 @@
         "targetPlatforms": [
             "aplite",
             "basalt",
+            "chalk",
             "diorite"
         ],
         "uuid": "5cae3e60-0b35-45ca-8b16-08a8f6b9de40",
@@ -59,5 +60,5 @@
             "watchface": true
         }
     },
-    "version": "2.0.0"
+    "version": "2.10.0"
 }

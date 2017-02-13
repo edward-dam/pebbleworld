@@ -178,7 +178,7 @@ static void main_window_load(Window *window) {
   
   // splash layer
   splash_bitmap = gbitmap_create_with_resource(RESOURCE_ID_SPLASH);
-  splash_layer = bitmap_layer_create(GRect(0,cy-111,mx,my));
+  splash_layer = bitmap_layer_create(GRect(0,PBL_IF_ROUND_ELSE(cy-118,cy-111),mx,my));
   bitmap_layer_set_bitmap(splash_layer, splash_bitmap);
   layer_add_child(window_get_root_layer(window), bitmap_layer_get_layer(splash_layer));
   
