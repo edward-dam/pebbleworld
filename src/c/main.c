@@ -135,10 +135,10 @@ static void update_datetime() {
   struct tm *tick_time = localtime(&temp);
   
   // define date/time
-  strftime(time24_buffer,  sizeof(time24_buffer),  "%H:%M", tick_time);
-  strftime(time12_buffer,  sizeof(time12_buffer),  "%I:%M", tick_time);
-  strftime(datedm_buffer,  sizeof(datedm_buffer),  "%A %d %b", tick_time);
-  strftime(datemd_buffer,  sizeof(datemd_buffer),  "%A %b %d", tick_time);
+  strftime(time24_buffer, sizeof(time24_buffer), "%H:%M", tick_time);
+  strftime(time12_buffer, sizeof(time12_buffer), "%I:%M", tick_time);
+  strftime(datedm_buffer, sizeof(datedm_buffer), "%A %d %b", tick_time);
+  strftime(datemd_buffer, sizeof(datemd_buffer), "%A %b %d", tick_time);
 
   // display time
   if (!hour_bool) {
