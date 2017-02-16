@@ -53,10 +53,10 @@ static void load_options() {
     persist_read_string(date_setting, date_buffer, sizeof(date_buffer));
     if (strcmp(date_buffer, "true") == 0) {
       date_bool = true;
-      text_layer_set_text(date_layer,  datemd_buffer);
+      text_layer_set_text(date_layer, datemd_buffer);
     } else {
       date_bool = false;
-      text_layer_set_text(date_layer,  datedm_buffer);
+      text_layer_set_text(date_layer, datedm_buffer);
     }
   } else {
     date_bool = false;
@@ -180,7 +180,7 @@ static void main_window_load(Window *window) {
   splash_bitmap = gbitmap_create_with_resource(RESOURCE_ID_SPLASH);
   splash_layer = bitmap_layer_create(GRect(0,PBL_IF_ROUND_ELSE(cy-118,cy-111),mx,my));
   bitmap_layer_set_bitmap(splash_layer, splash_bitmap);
-  layer_add_child(window_get_root_layer(window), bitmap_layer_get_layer(splash_layer));
+  layer_add_child(window_layer, bitmap_layer_get_layer(splash_layer));
   
   // time layer
   time_layer = text_layer_create(GRect(0,cy+11,mx,my));
@@ -189,7 +189,7 @@ static void main_window_load(Window *window) {
   layer_add_child(window_layer, text_layer_get_layer(time_layer));
 
   // date layer
-  date_layer  = text_layer_create(GRect(0,cy+66,mx,my));
+  date_layer = text_layer_create(GRect(0,cy+66,mx,my));
   text_layer_set_background_color(date_layer, GColorBlack);
   text_layer_set_text_color(date_layer, GColorWhite);
   text_layer_set_text_alignment(date_layer, GTextAlignmentCenter);
