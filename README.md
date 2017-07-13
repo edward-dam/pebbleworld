@@ -14,7 +14,7 @@ https://apps.getpebble.com/applications/588be9f593254a9b240006e1
 ### description
 <br />
 
-Map of the world watchface with location, temperature, date and time.
+Map of the world watchface with location, temperature, date and time.<br />
 <br />
 
 Options:
