@@ -1,17 +1,17 @@
 # pebbleworld
-### screenshots
+## screenshots
 
 ![basalt.png](/assets/basalt.png)
 
-### banner
+## banner
 
 ![banner.png](/assets/banner.png)
 
-### app store
+## app store
 
 https://apps.getpebble.com/en_US/application/588be9f593254a9b240006e1
 
-### description
+## description
 <br />
 
 Map of the world watchface with location, temperature, date and time.<br />
